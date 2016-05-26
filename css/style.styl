@@ -1,0 +1,55 @@
+border-radius()
+	-webkit-border-radius: arguments
+	-moz-border-radius: arguments
+	border-radius: arguments
+
+
+line-shadow()
+	box-shadow: 0 1px 0 0 rgba(255,255,255, .005), 0 2px 0 0 rgba(0,0,0, .08), 0 3px 0 0 rgba(0,0,0, .07), 0 4px 0 0 rgba(0,0,0, .06), 0 5px 0 0 rgba(0,0,0, .009), 0 6px 0 0 rgba(0,0,0, .008), 0 7px 0 0 rgba(0,0,0, .007), 0 8px 0 0 rgba(0,0,0, .006), 0 9px 0 0 rgba(0,0,0, .005), 0 10px 0 0 rgba(0,0,0, .004), 0 11px 0 0 rgba(0,0,0, .003), 0 12px 0 0 rgba(0,0,0, .002), 0 13px 0 0 rgba(0,0,0, .001), 0 14px 0 0 rgba(0,0,0, .0009), 0 15px 0 0 rgba(0,0,0, .0008), 0 16px 0 0 rgba(0,0,0, .0007), 0 17px 0 0 rgba(0,0,0, .0006), 0 18px 0 0 rgba(0,0,0, .0005), 0 19px 0 0 rgba(0,0,0, .0004), 0 20px 0 0 rgba(0,0,0, .0003), 0 21px 0 0 rgba(0,0,0, .0001), 0 22px 0 0 rgba(0,0,0, .00009), 0 23px 0 0 rgba(0,0,0, .00008), 0 24px 0 0 rgba(0,0,0, .00007), 0 25px 0 0 rgba(0,0,0, .00006), 0 26px 0 0 rgba(0,0,0, .00005), 0 27px 0 0 rgba(0,0,0, .00004), 0 28px 0 0 rgba(0,0,0, .00003), 0 29px 0 0 rgba(0,0,0, .00002), 0 30px 0 0 rgba(0,0,0, .00001)
+
+ball-shadow()
+	box-shadow: -1px 1px 0 0 rgba(255,255,255, .005), -2px 2px 0 0 rgba(0,0,0, .08), -3px 3px 0 0 rgba(0,0,0, .07), -4px 4px 0 0 rgba(0,0,0, .06), -5px 5px 0 0 rgba(0,0,0, .009), -6px 6px 0 0 rgba(0,0,0, .008), -7px 7px 0 0 rgba(0,0,0, .007), -8px 8px 0 0 rgba(0,0,0, .006), -9px 9px 0 0 rgba(0,0,0, .005), -10px 10px 0 0 rgba(0,0,0, .004), -11px 11px 0 0 rgba(0,0,0, .003), -12px 12px 0 0 rgba(0,0,0, .002), -13px 13px 0 0 rgba(0,0,0, .001), -14px 14px 0 0 rgba(0,0,0, .0009), -15px 15px 0 0 rgba(0,0,0, .0008), -15px 15px 0 0 rgba(0,0,0, .0007), -15px 15px 0 0 rgba(0,0,0, .0006), -15px 15px 0 0 rgba(0,0,0, .0005), -15px 15px 0 0 rgba(0,0,0, .0004), -15px 15px 0 0 rgba(0,0,0, .0003), -15px 15px 0 0 rgba(0,0,0, .0001);
+
+
+animation-delay(i)
+	-webkit-animation-delay: .3s * i
+	animation-delay:  .3s * i
+
+
+.deoxyribonucleic
+	margin: 0 auto
+	max-width: 480px
+	.acid
+		animation-name: deoxy
+		animation-duration: 2s
+		animation-timing-function: cubic-bezier(.49,.21,.52,.81)
+		animation-iteration-count: infinite
+		border-bottom: 3px solid #1f7395
+		margin: 40px auto
+		padding-top: 7px 
+		position: relative
+		width: 15px
+		line-shadow()
+		&:before, &:after
+			content: ' '
+			background-color: #030304
+			height: 16px
+			position: absolute
+			top: 0
+			width: 16px
+			border-radius(50%)
+			ball-shadow()
+		&:before
+			left: 0
+		&:after
+			right: 0
+
+
+for i in 1 2 3 4 5 
+	.delay{i}
+		animation-delay(i)
+
+
+@keyframes deoxy
+	50%
+		width: 100%
