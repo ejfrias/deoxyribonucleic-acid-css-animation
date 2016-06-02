@@ -12,6 +12,9 @@
   padding-top: 7px;
   position: relative;
   width: 15px;
+  -webkit-backface-visibility: hidden;
+  -webkit-transform: translateZ(0);
+  -webkit-transform-style: preserve-3d;
   box-shadow: 0 1px 0 0 rgba(255,255,255,0.005), 0 2px 0 0 rgba(0,0,0,0.05), 0 3px 0 0 rgba(0,0,0,0.04), 0 4px 0 0 rgba(0,0,0,0.03), 0 5px 0 0 rgba(0,0,0,0.02), 0 6px 0 0 rgba(0,0,0,0.01), 0 7px 0 0 rgba(0,0,0,0.009), 0 8px 0 0 rgba(0,0,0,0.008), 0 9px 0 0 rgba(0,0,0,0.007), 0 10px 0 0 rgba(0,0,0,0.006), 0 11px 0 0 rgba(0,0,0,0.005), 0 12px 0 0 rgba(0,0,0,0.004), 0 13px 0 0 rgba(0,0,0,0.003), 0 14px 0 0 rgba(0,0,0,0.002), 0 15px 0 0 rgba(0,0,0,0.001), 0 16px 0 0 rgba(0,0,0,0.001), 0 17px 0 0 rgba(0,0,0,0.001), 0 18px 0 0 rgba(0,0,0,0.001), 0 19px 0 0 rgba(0,0,0,0.001), 0 20px 0 0 rgba(0,0,0,0.001), 0 21px 0 0 rgba(0,0,0,0), 0 22px 0 0 rgba(0,0,0,0), 0 23px 0 0 rgba(0,0,0,0), 0 24px 0 0 rgba(0,0,0,0), 0 25px 0 0 rgba(0,0,0,0), 0 26px 0 0 rgba(0,0,0,0), 0 27px 0 0 rgba(0,0,0,0), 0 28px 0 0 rgba(0,0,0,0), 0 29px 0 0 rgba(0,0,0,0), 0 30px 0 0 rgba(0,0,0,0), 0 31px 0 0 rgba(0,0,0,0), 0 32px 0 0 rgba(0,0,0,0), 0 33px 0 0 rgba(0,0,0,0), 0 34px 0 0 rgba(0,0,0,0), 0 35px 0 0 rgba(0,0,0,0);
 }
 .deoxyribonucleic .acid:before,

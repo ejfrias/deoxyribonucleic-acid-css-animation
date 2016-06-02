@@ -29,6 +29,9 @@ animation-delay(i)
 		padding-top: 7px 
 		position: relative
 		width: 15px
+		-webkit-backface-visibility: hidden
+		-webkit-transform: translateZ(0)
+		-webkit-transform-style: preserve-3d
 		line-shadow()
 		&:before, &:after
 			content: ' '
